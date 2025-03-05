@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.fw-700{
+  font-weight: 700;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.banner-slider .slick-dots {
+  bottom: 56px; /* Điều chỉnh vị trí dọc */
+  left: 40px; /* Đưa dấu chấm về bên trái */
+  width: auto;
+  display: flex !important;
+}
+
+.banner-slider .slick-dots li {
+  width: 14px;
+  height: 14px;
+  border: 2px solid white; /* Viền trắng */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.banner-slider .slick-dots li button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.banner-slider .slick-dots li.slick-active {
+  width: 18px; /* Khi active, chấm lớn hơn */
+  height: 18px;
+}
+
+.banner-slider .slick-dots li.slick-active button {
+  background-color: white; /* Chấm trắng bên trong khi active */
+  width: 10px;
+  height: 10px;
+}
+.number-box {
+  position: relative;
+  font-size: 100px; /* Kích thước chữ lớn */
+  font-weight: bold; /* Chữ đậm */
+  color: #0094ff; /* Màu xanh dương */
+  font-family: Arial, sans-serif;
+}
+
+.number-box::before {
+  content: "7"; /* Thay số 7 bằng ký tự mong muốn */
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  color: rgba(255, 255, 255, 0.1); /* Màu trắng mờ */
+  transform: skewX(-10deg); /* Nghiêng hiệu ứng bóng */
+  z-index: -1; /* Đưa bóng ra sau */
+}
